@@ -49,22 +49,42 @@ table {
 
 /*  custom css */
 
-.grid {
+.grid  {
+  margin: 0 -10px;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.flexbox  {
   display: flex;
+  justify-content: center;
+  /*height: 3em;
+  width: auto;*/
 }
-
-/*.intro  {
-  grid-area: a;
-}
-
-.about  {
-  grid-area: b;
-}*/
 
 .selfie  {
-  /*grid-area: c;*/
-  width: 50px;
-  height: 50px;
-  /*max-width: 100%;
-  height: auto;/*
+  width: 25%;
+  height: auto;
+}
+
+h1  {
+  font-size: 3em;
+}
+
+h2  {
+  font-size: 2em;
+}
+
+p  {
+  font-size: 1.25em;
+}
+
+ul  {
+  font-size: 1.25em;
+  list-style-type: disc;
+  padding: 1%;
+  padding-left: 5%;
+	padding-bottom: 3%;
 }
