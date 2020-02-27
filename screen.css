@@ -51,34 +51,55 @@ table {
 
 .grid  {
   margin: 0 -10px;
-  padding: 0;
+  padding: 40px;
+  grid-gap: 40px;
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background-color: #e0dcdc;
+
 }
 
 .flexbox  {
   display: flex;
-  justify-content: center;
-  /*height: 3em;
-  width: auto;*/
+  align-items: center;
+  background-color: #025cab;
+  flex-direction: column;
+}
+
+.intro  {
+  background-color: white;
+}
+
+.about  {
+  background-color: white;
+}
+
+.why  {
+  background-color: white;
 }
 
 .selfie  {
-  width: 25%;
+  width: 20%;
   height: auto;
+  padding-top: 40px;
+  border-radius: 37.5%;
+  padding-bottom: 40px;
 }
 
 h1  {
   font-size: 3em;
+  padding
 }
 
 h2  {
   font-size: 2em;
+  padding-bottom: 3%;
 }
 
 p  {
   font-size: 1.25em;
+  padding-bottom: 3%;
 }
 
 ul  {
