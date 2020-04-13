@@ -18,6 +18,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Optimal Typographic Rendering */
 html {
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 1.125em;
   line-height: 1.222em;
   text-rendering: optimizeLegibility;
@@ -27,16 +28,24 @@ html {
   text-size-adjust: 100%;
 }
 
+p,
+ul  {
+  padding-bottom: 1.222em;
+}
+
+
 /* Responsive Media */
-audio,
+/*audio,
 img,
 video {
-  display: block;
+
+}*/
+
+.responsive  {
   max-width: 100%;
+  height: auto;
 }
-picture img {
-  width: 100%;
-}
+
 
 /* Typical bold and italic styles */
 b,
@@ -57,12 +66,24 @@ cite {
 
 /* ===== MODULAR STYLES ========= */
 /* Primarily class selectors for styling unique page components  */
+#header {
+  background: white;
+  justify-content: center;
+}
+
+#content {
+  background: white;
+}
+
 #home {
   padding-left: 2em;
   padding-right: 2em;
+  background: gray;
 }
 
-
+#footer {
+  background: white;
+}
 
 /* ===== STATE STYLES =========== */
 /*
@@ -70,3 +91,50 @@ cite {
   JavaScript-dependent styles can be prefixed with the .hasjs class added in by the
   `js/site.js` file.
 */
+@media screen and ( min-width: 500px) {
+img.responsive {
+  width: 350px;
+  }
+}
+
+@media screen and (min-width: 750px)  {
+  #home {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+}
+
+@media screen and (min-width: 1000px)  {
+  #home {
+    padding-left: 8em;
+    padding-right: 8em;
+  }
+}
+
+@media screen and (min-width: 1250px)  {
+  #home {
+    padding-left: 10em;
+    padding-right: 10em;
+  }
+}
+
+@media screen and (min-width: 1500px)  {
+  #home {
+    padding-left: 12em;
+    padding-right: 12em;
+  }
+}
+
+@media screen and (min-width: 1750px)  {
+  #home {
+    padding-left: 14em;
+    padding-right: 14em;
+  }
+}
+
+@media screen and (min-width: 2000px)  {
+  #home {
+    padding-left: 16em;
+    padding-right: 16em;
+  }
+}
