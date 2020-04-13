@@ -18,6 +18,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Optimal Typographic Rendering */
 html {
+  font-size: 1.125em;
+  line-height: 1.222em;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -55,10 +57,9 @@ cite {
 
 /* ===== MODULAR STYLES ========= */
 /* Primarily class selectors for styling unique page components  */
-#navigation .accessibility {
-  /* Accessibly hide the accessibility components of the navigation */
-  position: absolute;
-  left: -10000px;
+#home {
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 
