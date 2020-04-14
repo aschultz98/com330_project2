@@ -28,22 +28,36 @@ html {
   text-size-adjust: 100%;
 }
 
-p,ul  {
+h1,h2,p,ul  {
+  padding-left: .75em;
+  padding-right: .75em;
   padding-bottom: 1.222em;
 }
 
-h1,h2,p  {
-  padding-left: .75em;
-  padding-right: .75em;
+h1  {
+  font-size: 2em;
+  text-align: center;
+  padding-top: 0.5em;
+}
+
+h2  {
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 1.222em;
+}
+
+ul  {
+  list-style-type: square;
+  padding-left: 4em;
+}
+
+#footer  {
+  padding-top: 1.222em;
+  background:
 }
 
 
 /* Responsive Media */
-/*audio,
-img,
-video {
-
-}*/
 
 .responsive  {
   max-width: 100%;
@@ -73,7 +87,6 @@ cite {
 #header {
   background: white;
   display: grid;
-  align-content: center;
   justify-content: center;
 }
 
@@ -83,17 +96,13 @@ cite {
 }
 
 #home {
-  padding-left: 1.222em;
-  padding-right: 1.222em;
   background: #025cab;
 }
 
-#about  {
-  background: red;
-}
-
-#why  {
-  background: orange;
+#about, #why, #student, #interests  {
+  background: #e0dcdc;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 #footer {
@@ -120,8 +129,7 @@ cite {
 
   #content  {
     display: grid;
-    grid-gap: 1em;
-    grid-template-columns: 1fr;
+    grid-column: 1fr;
   }
 }
 
@@ -140,7 +148,7 @@ cite {
 
   #content  {
     display: grid;
-    grid-gap: 1em;
+    grid-gap: 0.5em;
     grid-template-columns: 1fr 1fr;
   }
 }
