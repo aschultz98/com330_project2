@@ -116,7 +116,7 @@ cite {
   `js/site.js` file.
 */
 @media screen and ( min-width: 500px) {
-  img.responsive {
+  .responsive {
     width: 350px;
   }
 }
